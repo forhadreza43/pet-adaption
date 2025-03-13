@@ -22,90 +22,11 @@
           <div
             class="flex items-center space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse"
           >
-            <button
-              type="button"
-              class="flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 md:me-0 dark:focus:ring-gray-600"
-              id="user-menu-button"
-              aria-expanded="false"
-              data-dropdown-toggle="user-dropdown"
-              data-dropdown-placement="bottom"
-            >
-              <span class="sr-only">Open user menu</span>
-              <img
-                class="h-8 w-8 rounded-full"
-                src="/docs/images/people/profile-picture-3.jpg"
-                alt="user photo"
-              />
-            </button>
-            <!-- Dropdown menu -->
-            <div
-              class="z-50 my-4 hidden list-none divide-y divide-gray-100 rounded-lg bg-white text-base shadow-sm dark:divide-gray-600 dark:bg-gray-700"
-              id="user-dropdown"
-            >
-              <div class="px-4 py-3">
-                <span class="block text-sm text-gray-900 dark:text-white"
-                  >Bonnie Green</span
-                >
-                <span
-                  class="block truncate text-sm text-gray-500 dark:text-gray-400"
-                  >name@flowbite.com</span
-                >
-              </div>
-              <ul class="py-2" aria-labelledby="user-menu-button">
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <button
-              data-collapse-toggle="navbar-user"
-              type="button"
-              class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-user"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="h-5 w-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
+            <img
+              class="h-6 w-6 rounded-full"
+              src="./assets/logo.webp"
+              alt="user photo"
+            />
           </div>
           <div
             class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
@@ -126,21 +47,7 @@
                 <a
                   href="#"
                   class="block rounded-sm px-3 py-2 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block rounded-sm px-3 py-2 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block rounded-sm px-3 py-2 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
-                  >Pricing</a
+                  >Shop</a
                 >
               </li>
               <li>
@@ -169,7 +76,8 @@
           readable content of a page when looking <br />
           at its layout. The point of using Lorem Ipsum is that it has a.
         </p>
-        <a onclick="loadPet()"
+        <a
+          onclick="loadPet()"
           href="#"
           class="btn inline-flex items-center justify-center rounded-lg bg-[#0E7A81] px-5 py-3 text-center text-base font-medium text-white btn-md hover:bg-[#1b3634] focus:ring-4 focus:ring-blue-300"
         >
@@ -197,6 +105,14 @@
       >
         <!--! Category button will be generate automatically here  -->
       </section>
+      <div class="navbar">
+        <div class="navbar-start">
+          <a class="text-xl font-bold">Best Deal for you</a>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#0E7A81] text-white">Sort by price</a>
+        </div>
+      </div>
       <section class="grid pt-5 sm:grid-cols-4">
         <div
           id="pets-container"
